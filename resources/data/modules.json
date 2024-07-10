@@ -1,0 +1,1995 @@
+[
+    {
+        "name": "post",
+        "label": "Post",
+        "icon": "bx bx-pin",
+        "userPermissions": [
+            {
+                "name": "like",
+                "label": "Like",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "dislike",
+                "label": "Dislike",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "comments",
+                "label": "Comments",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "share",
+                "label": "Share",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "pray",
+                "label": "Pray",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "sad",
+                "label": "Sad",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "victory",
+                "label": "Victory",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "report",
+                "label": "Report",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "replay_comment",
+                "label": "Replay Comment",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "view_later",
+                "label": "View Later",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "voice_comment",
+                "label": "Voice Comment",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "add_post",
+                "label": "Add Post",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "post_images",
+                "label": "Post Images",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "post_videos",
+                "label": "Post Videos",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "share_position",
+                "label": "Share Position",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "live_stream",
+                "label": "Live Stream",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "Post_links",
+                "label": "Post Links",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            }
+
+        ]
+    },
+    {
+        "name": "music",
+        "label": "Music",
+        "icon": "bx bx-music",
+        "userPermissions": [
+            {
+                "name": "share_music",
+                "label": "Share Music",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "create_playlist",
+                "label": "Create Playlist",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "playlist_total",
+                "label": "Playlist Total",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "1",
+                        "value": "1"
+                    },
+                    {
+                        "label": "2",
+                        "value": "2"
+                    },
+                    {
+                        "label": "3",
+                        "value": "3"
+                    },
+                    {
+                        "label": "4",
+                        "value": "4"
+                    },
+                    {
+                        "label": "5",
+                        "value": "5"
+                    },
+                    {
+                        "label": "6",
+                        "value": "6"
+                    },
+                    {
+                        "label": "7",
+                        "value": "7"
+                    },
+                    {
+                        "label": "8",
+                        "value": "8"
+                    },
+                    {
+                        "label": "9",
+                        "value": "9"
+                    },
+                    {
+                        "label": "10",
+                        "value": "10"
+                    }
+                ]
+            },
+            {
+                "name": "listen_amount_per_day",
+                "label": "Listen Amount Per Day",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "5",
+                        "value": "5"
+                    },
+                    {
+                        "label": "10",
+                        "value": "10"
+                    },
+                    {
+                        "label": "15",
+                        "value": "15"
+                    },
+                    {
+                        "label": "20",
+                        "value": "20"
+                    },
+                    {
+                        "label": "Unlimited",
+                        "value": "unlimited"
+                    }
+                ]
+            },
+            {
+                "name": "add_to_favorite",
+                "label": "Add to Favorite",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "artist_to_favorite",
+                "label": "Artist to Favorite",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "sent_to_friend",
+                "label": "Sent to Friend",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "buy_music",
+                "label": "Buy Music",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            }
+
+        ]
+    },
+    {
+        "name": "news",
+        "label": "News",
+        "icon": "bx bx-rss",
+        "userPermissions": [
+            {
+                "name": "like",
+                "label": "Like",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "dislike",
+                "label": "Dislike",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "comments",
+                "label": "Comments",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "share",
+                "label": "Share",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "pray",
+                "label": "Pray",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "sad",
+                "label": "Sad",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "victory",
+                "label": "Victory",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "report",
+                "label": "Report",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "replay_comment",
+                "label": "Replay Comment",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "view_later",
+                "label": "View Later",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "voice_comment",
+                "label": "Voice Comment",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "events",
+        "label": "Events",
+        "icon": "bx bx-calendar",
+        "userPermissions": [
+            {
+                "name": "status",
+                "label": "Status",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "like",
+                "label": "Like",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "dislike",
+                "label": "Dislike",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "comments",
+                "label": "Comments",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "share",
+                "label": "Share",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "pray",
+                "label": "Pray",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "sad",
+                "label": "Sad",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "victory",
+                "label": "Victory",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "report",
+                "label": "Report",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "replay_comment",
+                "label": "Replay Comment",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "view_later",
+                "label": "View Later",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "voice_comment",
+                "label": "Voice Comment",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "buy_ticket",
+                "label": "Buy Ticket",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "videos",
+        "label": "Videos",
+        "icon": "bx bx-video",
+        "userPermissions": [
+            {
+                "name": "status",
+                "label": "Status",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "share_music",
+                "label": "Share Music",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "create_playlist",
+                "label": "Create Playlist",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "playlist_total",
+                "label": "Playlist Total",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "1",
+                        "value": "1"
+                    },
+                    {
+                        "label": "2",
+                        "value": "2"
+                    },
+                    {
+                        "label": "3",
+                        "value": "3"
+                    },
+                    {
+                        "label": "4",
+                        "value": "4"
+                    },
+                    {
+                        "label": "5",
+                        "value": "5"
+                    },
+                    {
+                        "label": "6",
+                        "value": "6"
+                    },
+                    {
+                        "label": "7",
+                        "value": "7"
+                    },
+                    {
+                        "label": "8",
+                        "value": "8"
+                    },
+                    {
+                        "label": "9",
+                        "value": "9"
+                    },
+                    {
+                        "label": "10",
+                        "value": "10"
+                    }
+                ]
+            },
+            {
+                "name": "listen_amount_per_day",
+                "label": "Listen Amount Per Day",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "5",
+                        "value": "5"
+                    },
+                    {
+                        "label": "10",
+                        "value": "10"
+                    },
+                    {
+                        "label": "15",
+                        "value": "15"
+                    },
+                    {
+                        "label": "20",
+                        "value": "20"
+                    },
+                    {
+                        "label": "Unlimited",
+                        "value": "unlimited"
+                    }
+                ]
+            },
+            {
+                "name": "add_to_favorite",
+                "label": "Add to Favorite",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "friends",
+        "label": "Friends",
+        "icon": "bx bx-user",
+        "userPermissions": [
+            {
+                "name": "sent_friend_request",
+                "label": "Sent Friend Request",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "total_friends",
+                "label": "Total Friends",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "0",
+                        "value": "0"
+                    },
+                    {
+                        "label": "50",
+                        "value": "50"
+                    },
+                    {
+                        "label": "100",
+                        "value": "100"
+                    },
+                    {
+                        "label": "200",
+                        "value": "200"
+                    },
+                    {
+                        "label": "Unlimited",
+                        "value": "unlimited"
+                    }
+                ]
+            },
+            {
+                "name": "family_option",
+                "label": "Family Option",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "acquaintance_option",
+                "label": "Acquaintance Option",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "family_tree",
+                "label": "Family Tree",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "chat",
+        "label": "Chat",
+        "icon": "bx bx-chat",
+        "userPermissions": [
+            {
+                "name": "voice_message",
+                "label": "Voice Message",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "text_message",
+                "label": "Text Message",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "sent_milys",
+                "label": "Sent Smilys",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "sent_videos",
+                "label": "Sent Videos",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "sent_images",
+                "label": "Sent Images",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "sent_files",
+                "label": "Sent Files",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "share_postion",
+                "label": "Share Position",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "voice_calls",
+                "label": "Voice Calls",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "video_calls",
+                "label": "Video Calls", 
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "share_position",
+                "label": "Share Position",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "sent_links",
+                "label": "Sent Links",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "fanpage",
+        "label": "FanPage",
+        "icon": "bx bx-user",
+        "userPermissions": [
+            {
+                "name": "create_fanpage",
+                "label": "Create Fanpage",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "fanpage_total",
+                "label": "Fanpage Total",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "1",
+                        "value": "1"
+                    },
+                    {
+                        "label": "2",
+                        "value": "2"
+                    },
+                    {
+                        "label": "3",
+                        "value": "3"
+                    },
+                    {
+                        "label": "4",
+                        "value": "4"
+                    },
+                    {
+                        "label": "5",
+                        "value": "5"
+                    },
+                    {
+                        "label": "6",
+                        "value": "6"
+                    },
+                    {
+                        "label": "7",
+                        "value": "7"
+                    },
+                    {
+                        "label": "8",
+                        "value": "8"
+                    },
+                    {
+                        "label": "9",
+                        "value": "9"
+                    },
+                    {
+                        "label": "10",
+                        "value": "10"
+                    }
+                ]
+            },
+            {
+                "name": "create_groups",
+                "label": "Create Groups",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "group_total",
+                "label": "Group Total",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "1",
+                        "value": "1"
+                    },
+                    {
+                        "label": "2",
+                        "value": "2"
+                    },
+                    {
+                        "label": "3",
+                        "value": "3"
+                    },
+                    {
+                        "label": "4",
+                        "value": "4"
+                    },
+                    {
+                        "label": "5",
+                        "value": "5"
+                    },
+                    {
+                        "label": "6",
+                        "value": "6"
+                    },
+                    {
+                        "label": "7",
+                        "value": "7"
+                    },
+                    {
+                        "label": "8",
+                        "value": "8"
+                    },
+                    {
+                        "label": "9",
+                        "value": "9"
+                    },
+                    {
+                        "label": "10",
+                        "value": "10"
+                    }
+                ]
+            },
+            {
+                "name": "be_follower",
+                "label": "Be Follower",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "be_member",
+                "label": "Be Member",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "be_admin",
+                "label": "Be Admin",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "be_author",
+                "label": "Be Author",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "online_shop",
+        "label": "Online Shop",
+        "icon": "bx bx-cart-add",
+        "userPermissions": [
+            {
+                "name": "buy_items",
+                "label": "Buy Items",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "view_later",
+                "label": "View Later",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "share",
+                "label": "Share",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "whishlist",
+                "label": "Wishlist",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "bazar",
+        "label": "Bazar",
+        "icon": "bx bx-cart-download",
+        "userPermissions": [
+            {
+                "name": "contact_user",
+                "label": "Contact User",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "add_items",
+                "label": "Add Items",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "share",
+                "label": "Share",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "view_later",
+                "label": "View Later",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "extend",
+                "label": "Extend",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "repost",
+                "label": "Repost",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "playlist_total",
+                "label": "Playlist Total",  
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "1",
+                        "value": "1"
+                    },
+                    {
+                        "label": "2",
+                        "value": "2"
+                    },
+                    {
+                        "label": "3",
+                        "value": "3"
+                    },
+                    {
+                        "label": "4",
+                        "value": "4"
+                    },
+                    {
+                        "label": "5",
+                        "value": "5"
+                    },
+                    {
+                        "label": "5",
+                        "value": "5"
+                    },
+                    {
+                        "label": "6",
+                        "value": "6"
+                    },
+                    {
+                        "label": "7",
+                        "value": "7"
+                    },
+                    {
+                        "label": "8",
+                        "value": "8"
+                    },
+                    {
+                        "label": "9",
+                        "value": "9"
+                    },
+                    {
+                        "label": "10",
+                        "value": "10"
+                    },
+                    {
+                        "label": "Unlimited",
+                        "value": "unlimited"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "history",
+        "label": "History",
+        "icon": "bx bx-stopwatch",
+        "userPermissions": [
+            {
+                "name": "like",
+                "label": "Like",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "dislike",
+                "label": "Dislike",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "comments",
+                "label": "Comments",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "share",
+                "label": "Share",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "pray",
+                "label": "Pray",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "sad",
+                "label": "Sad",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "victory",
+                "label": "Victory",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "report",
+                "label": "Report",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "replay_comment",
+                "label": "Replay Comment",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "view_later",
+                "label": "View Later",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "voice_comment",
+                "label": "Voice Comment",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "media",
+        "label": "Media",
+        "icon": "bx bx-tv",
+        "userPermissions": [
+            {
+                "name": "watch",
+                "label": "Watch",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "add_to_favorite",
+                "label": "Add to Favorite",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "share",
+                "label": "Share",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "voting",
+        "label": "Voting",
+        "icon": "bx bx-check-circle",
+        "userPermissions": [
+            {
+                "name": "vote",
+                "label": "Vote",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            },
+            {
+                "name": "share",
+                "label": "Share",
+                "inputType": "select",
+                "defaultValue": "not_allowed",
+                "options": [
+                    {
+                        "label": "Allowed",
+                        "value": "allowed"
+                    },
+                    {
+                        "label": "Not Allowed",
+                        "value": "not_allowed"
+                    }
+                ]
+            }
+        ]
+    }
+]

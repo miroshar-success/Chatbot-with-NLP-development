@@ -1,0 +1,23 @@
+// Form control
+// *******************************************************************************
+// form input placeholder animation
+.form-control {
+  &::placeholder,
+  &:focus::placeholder {
+    transition: $input-placeholder-transition;
+  }
+}
+@include ltr-only {
+  .form-control {
+    &:focus::placeholder {
+      transform: translateX(5px);
+    }
+  }
+}
+@include rtl-only {
+  .form-control {
+    &:focus::placeholder {
+      transform: translateX(-5px);
+    }
+  }
+}

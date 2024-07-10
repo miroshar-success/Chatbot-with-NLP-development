@@ -1,0 +1,496 @@
+[
+    {
+        "name": "dashboard",
+        "label": "Dashboard",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            }
+        ]
+    },
+    {
+        "name": "users",
+        "label": "User Management",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "music",
+        "label": "Music Management",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "voting",
+        "label": "Voting",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "online_shop",
+        "label": "Online Shop",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "fanpage",
+        "label": "Fanpage Management",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "report",
+        "label": "Report",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "posts",
+        "label": "Post Management",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "news",
+        "label": "News Management",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "videos",
+        "label": "Video Management",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "movies",
+        "label": "Movie Management",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "series",
+        "label": "Series Management",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "zarok_app",
+        "label": "Zarok App",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "events",
+        "label": "Event Management",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "history",
+        "label": "History Management",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "donation",
+        "label": "Donation Management",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "media",
+        "label": "Media Management",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "bazar",
+        "label": "Bazar",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "advertisement",
+        "label": "Advertisement",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "location",
+        "label": "Location",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "language",
+        "label": "Language",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "policy_terms",
+        "label": "Policy And Terms",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    },
+    {
+        "name": "artist",
+        "label": "Artist",
+        "children": [
+            {
+                "name": "read",
+                "label": "Read"
+            },
+            {
+                "name": "write",
+                "label": "Write"
+            },
+            {
+                "name": "create",
+                "label": "Create"
+            },
+            {
+                "name": "delete",
+                "label": "Delete"
+            }
+        ]
+    }
+]

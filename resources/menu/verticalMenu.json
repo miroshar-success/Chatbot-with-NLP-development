@@ -1,0 +1,1321 @@
+{
+  "menu": [
+    {
+      "menuHeader": "Dashboard"
+    },
+    {
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons bx bx-home-circle",
+      "slug": "dashboard"
+    },
+    {
+      "menuHeader": "Customers"
+    },
+    {
+      "name": "Users",
+      "icon": "menu-icon tf-icons bx bx-group",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "url": "/users/standard",
+          "name": "Standard",
+          "slug": "users.standard.index"
+        },
+        {
+          "url": "/users/premium",
+          "name": "Premium",
+          "slug": "users.premium.index"
+        },
+        {
+          "url": "/users/vip",
+          "name": "VIP",
+          "slug": "users.vip.index"
+        },
+        {
+          "name": "Settings",
+          "slug": "users.settings",
+          "submenu": [
+            {
+              "name": "User Roles",
+              "slug": "settings.user-roles.standard",
+              "url": "/settings/user-roles/standard"
+            },
+            {
+              "name": "User Pricing",
+              "url": "/settings/pricing",
+              "slug": "settings.pricing"
+            },
+            {
+              "name": "Reasons",
+              "url": "/settings/reasons",
+              "slug": "settings.reasons.index"
+            },
+            {
+              "name": "Storage",
+              "slug": "user.storage",
+              "url": "/app/user/storage"
+            },
+            {
+              "name": "Flagged Users",
+              "url": "/reports/flagged-users?status=pending",
+              "slug": "reports.flagged-users.index"
+            },
+            {
+              "name": "User Prefix",
+              "url": "/settings/user/prefix",
+              "slug": "settings.user.prefix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "FanPage",
+      "icon": "menu-icon tf-icons bx bx-file",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "Add/Manage Categories",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "FanPage Request",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Manage Fanpage",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "name": "Reasons",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Pricing",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Roles",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Ringtone",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Prefix",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Policy and Terms",
+              "slug": "layouts-content-nav-sidebar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "menuHeader": "E-Commerce"
+    },
+    {
+      "name": "Online Shop",
+      "icon": "menu-icon tf-icons bx bx-store",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "New Request",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Add Online Shop",
+          "slug": "layouts-content-navbar"
+        },
+        {
+          "name": "Manage Shops",
+          "slug": "layouts-content-nav-sidebar"
+        },
+        
+        {
+          "name": "Manage Items",
+          "slug": "layouts-content-nav-sidebar"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "name": "Reasons",
+              "slug": "layouts-collapsed-menu"
+            },
+            {
+              "name": "Commission Setting",
+              "slug": "layouts-content-navbar"
+            },
+            {
+              "name": "Tax Settings By Country",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Shipping",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Currency",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Payment Method",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Additional Services",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Shop Prefix",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Policy and Terms",
+              "slug": "layouts-content-nav-sidebar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bazar",
+      "icon": "menu-icon tf-icons bx bx-store",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "Category - Subcategory",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Manage Added Items",
+          "slug": "layouts-content-navbar"
+        },
+        {
+          "name": "Manage Search Items",
+          "slug": "layouts-content-nav-sidebar"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "name": "Reasons",
+              "slug": "layouts-collapsed-menu"
+            },
+            {
+              "name": "Pricing Plan",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Item Prefix",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Policy and Terms",
+              "slug": "layouts-content-nav-sidebar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Service Portal",
+      "icon": "menu-icon tf-icons bx bx-intersect",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "Add/Manage Categories",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "New Service Request",
+          "slug": "layouts-content-nav-sidebar"
+        },
+        {
+          "name": "Manage Service Request",
+          "slug": "layouts-content-nav-sidebar"
+        },
+        {
+          "name": "Manage Search Services",
+          "slug": "layouts-content-nav-sidebar"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "name": "Reasons",
+              "slug": "layouts-collapsed-menu"
+            },
+            {
+              "name": "Pricing Plan",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Policy and Terms",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Prefix",
+              "slug": "layouts-content-nav-sidebar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "menuHeader": "User adds"
+    },
+    {
+      "name": "Feeds",
+      "icon": "menu-icon tf-icons bx bx-book-content",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "Manage User Feeds",
+          "slug": "manage.user.feeds",
+          "url": "manage-user-feeds"
+        },
+        {
+          "name": "Manage Fanpage Feed",
+          "slug": "manage.fanpage.feeds",
+          "url": "manage-fanpage-feeds"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "name": "Post Filter",
+              "slug": "layouts",
+              "submenu": [
+                {
+                  "name": "Image Filter",
+                  "slug": "layouts-collapsed-menu"
+                },
+                {
+                  "name": "Video Filter",
+                  "slug": "layouts-content-navbar"
+                },
+                {
+                  "name": "Keywords Filter",
+                  "slug": "layouts-content-nav-sidebar"
+                }
+              ]
+            },
+            {
+              "name": "Feed Background",
+              "slug": "feed.background",
+              "url": "/feed-background?show=background"
+            },
+            {
+              "name": "Add Emojis",
+              "slug": "feed.emoji",
+              "url": "/feed-emoji?show=animated"
+            },
+            {
+              "name": "Add Reasons",
+              "slug": "feeds.reasons",
+              "url": "/feeds-reasons"
+            },
+            {
+              "name": "Policy and Terms",
+              "slug": "feeds.policy_terms",
+              "url": "/feeds-policy_and_terms"
+            },
+            {
+              "name": "Prefix",
+              "slug": "feeds.prefix",
+              "url": "/feeds-prefix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Videos",
+      "icon": "menu-icon tf-icons bx bx-video",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "Manage Videos",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Videos Reports",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Max. Upload Page",
+          "slug": "layouts-collapsed-menu"
+        },        {
+          "name": "Video Type Page",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "name": "Reasons",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Prefix",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Policy and Terms",
+              "slug": "layouts-content-nav-sidebar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Events",
+      "icon": "menu-icon tf-icons bx bx-calendar-event",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "Add a Event",
+          "url": "/events",
+          "slug": "events.index"
+        },
+        {
+          "url": "/events/requests",
+          "name": "Event Requests",
+          "slug": "events.requests"
+        },
+        {
+          "url": "/events/manage",
+          "name": "Manage Event",
+          "slug": "events.manage"
+        },
+        {
+          "name": "Event Tickets",
+          "url": "/events/tickets",
+          "slug" : "events.tickets"
+        },
+        {
+          "name": "Event Services",
+          "url": "/ticket-service",
+          "slug" : "ticket-service.index"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "name": "Reasons",
+              "slug": "events.reasons",
+              "url": "/events/reasons"
+            },
+            {
+              "name": "Policy and Terms",
+              "slug": "events.policy_and_terms",
+              "url": "/events/policy_and_terms"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wishes & Thanks",
+      "icon": "menu-icon tf-icons bx bx-credit-card",
+      "slug": "layouts",
+      "submenu": [
+          {
+          "name": "Greetings",
+          "slug": "layouts-collapsed-menu",
+          "submenu": [
+            {
+              "name": "Manage Prays",
+              "slug": "layouts-collapsed-menu"
+            },
+            {
+              "name": "Upload Cards",
+              "slug": "layouts-collapsed-menu"
+            }
+          ]
+        },
+         {
+          "name": "Pray",
+          "slug": "layouts-collapsed-menu",
+          "submenu": [
+            {
+              "name": "Manage Prays",
+              "slug": "layouts-collapsed-menu"
+            },
+            {
+              "name": "Upload Cards",
+              "slug": "layouts-collapsed-menu"
+            },
+            {
+              "name": "Add Prays",
+              "slug": "layouts-collapsed-menu"
+            }
+          ]
+        },
+         {
+          "name": "Sympathy",
+          "slug": "layouts-collapsed-menu",
+          "submenu": [
+            {
+              "name": "Manage Sympathy",
+              "slug": "layouts-collapsed-menu"
+            },
+            {
+              "name": "Upload Cards",
+              "slug": "layouts-collapsed-menu"
+            },
+            {
+              "name": "Add Sympathy",
+              "slug": "layouts-collapsed-menu"
+            }
+          ]
+        },
+        {
+          "name": "Setting",
+          "slug": "layouts-collapsed-menu",
+          "submenu": [
+            {
+              "name": "Pricing",
+              "slug": "layouts-collapsed-menu"
+            },
+            {
+              "name": "Prefix",
+              "slug": "layouts-collapsed-menu"
+            },
+            {
+              "name": "Policy and Terms",
+              "slug": "layouts-collapsed-menu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stories",
+      "icon": "menu-icon tf-icons bx bxs-videos",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "Manage Stories",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Reported Stories",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "name": "Reasons",
+              "slug": "settings.stories.reasons",
+              "url": "/settings/stories/reasons"
+            },
+            {
+              "name": "Add Songs",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Add Effects",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Add Fonts",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Add Font Colors",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Stories Time",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Prefix",
+              "slug": "settings.stories.prefix",
+              "url": "/settings/stories/prefix"
+            },
+            {
+              "name": "Policy and Terms",
+              "slug": "settings.stories.policy_and_terms",
+              "url": "/settings/stories/policy_and_terms"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "menuHeader": "Content Adds"
+    },
+    {
+      "name": "Music",
+      "icon": "menu-icon tf-icons bx bx-music",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "url": "/music",
+          "name": "Add Music",
+          "slug": "music.index"
+        },
+        {
+          "url": "/artist",
+          "name": "Add Artist",
+          "slug": "artist.index"
+        },
+        {
+          "url": "/album",
+          "name": "Add Album",
+          "slug": "album.index"
+        },
+        {
+          "url": "/video-clips",
+          "name": "Add Video Clips",
+          "slug": "video-clips.index"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "url": "/setting/music/pricing",
+              "name": "Pricing",
+              "slug": "music.pricing"
+            },
+            {
+              "url": "/musics/policy_and_terms",
+              "name": "Policy and Terms",
+              "slug": "music.policy_and_terms.index"
+            },
+            {
+              "url": "/setting/music/prefix",
+              "name": "Prefix",
+              "slug": "music.prefix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Voting",
+      "icon": "menu-icon tf-icons bx bx-sort",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "url": "/vote-category",
+          "name": "Add Category",
+          "slug": "vote-category.index"
+        },
+        {
+          "url": "/vote",
+          "name": "Add Manage Vote",
+          "slug": "vote.index"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "name": "Add Notification",
+              "slug": "layouts-collapsed-menu"
+            },
+            {
+              "name": "Setting",
+              "slug": "layouts-collapsed-menu"
+            },
+            {
+              "name": "Prefix",
+              "slug": "settings.voting.prefix",
+              "url": "/settings/voting/prefix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "History",
+      "icon": "menu-icon tf-icons bx bx-history",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "url": "/history-category",
+          "name": "Add Category",
+          "slug": "history-category.index"
+        },
+        {
+          "name": "Add Manage History",
+          "url": "/history",
+          "slug": "history.index"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "name": "Prefix",
+              "slug": "settings.history.prefix",
+              "url": "/settings/history/prefix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Donation",
+      "icon": "menu-icon tf-icons bx bx-donate-heart",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "url": "/donations",
+          "name": "Add Manage Donation",
+          "slug": "donations.index"
+        },
+        {
+          "name": "Add Manage Organization",
+          "url": "/donations/organizations",
+          "slug": "donations.organizations.index"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "name": "Prefix",
+              "slug": "settings.donation.prefix",
+              "url": "/settings/donation/prefix"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "News",
+      "icon": "menu-icon tf-icons bx bx-news",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "url": "/news-category",
+          "name": "Add Category",
+          "slug": "news-category.index"
+        },
+        {
+          "url": "/news",
+          "name": "Add / Manage News",
+          "slug": "news.index"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "name": "Prefix",
+              "slug": "layouts-content-nav-sidebar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "menuHeader": "Entertainment"
+    },
+    {
+      "name": "Live Stream",
+      "icon": "menu-icon tf-icons bx bx-video-recording",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "Manage Channel request",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Manage Channels",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Manage Live Streams",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Reported Live Streams",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "url": "setting/live/streaming_duration",
+              "name": "Streaming Durations",
+              "slug": "live.streaming_durations"
+            },
+            {
+              "url": "/setting/live/reasons",
+              "name": "Reasons",
+              "slug": "live.reasons"
+            },
+            {
+              "url": "/setting/live/prefix",
+              "name": "Prefix",
+              "slug": "live.prefix"
+            },
+            {
+              "url": "/live/policy_and_terms",
+              "name": "Policy and Terms",
+              "slug": "live.policy_and_terms.index"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chat System",
+      "icon": "menu-icon tf-icons bx bx-message-dots",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "Add/Manage Groups",
+          "slug": "settings.chats.manageGroup",
+          "url": "settings/chats/manage-group"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "name": "Upload Ringtone",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Text Settings",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Keywords",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Permission",
+              "slug": "settings.chats.permission",
+              "url": "settings/chats/permission"
+            },
+            {
+              "name": "Reasons",
+              "slug": "settings.chats.reasons",
+              "url": "/settings/chats/reasons"
+            },
+            {
+              "name": "Prefix",
+              "slug": "settings.chats.prefix",
+              "url": "/settings/chats/prefix"
+            },
+            {
+              "name": "Policy and Terms",
+              "slug": "settings.chats.policy_and_terms",
+              "url": "/settings/chats/policy_and_terms"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Movies",
+      "icon": "menu-icon tf-icons bx bx-movie-play",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "Movie Categories",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Add/Manage Movies",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "name": "Pricing",
+              "slug": "layouts",
+              "submenu": [
+                {
+                  "name": "Monthly Plan like Netflix",
+                  "slug": "layouts-content-nav-sidebar"
+                },
+                {
+                  "name": "Single Purchase",
+                  "slug": "layouts-content-nav-sidebar"
+                }
+              ]
+            },
+            {
+              "name": "Policy and Terms",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Prefix",
+              "slug": "layouts-content-nav-sidebar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Series",
+      "icon": "menu-icon tf-icons bx bx-movie-play",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "Series Categories",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Add/Manage Categories",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "name": "Pricing",
+              "slug": "layouts",
+              "submenu": [
+                {
+                  "name": "Monthly Plan like Netflix",
+                  "slug": "layouts-content-nav-sidebar"
+                },
+                {
+                  "name": "Single Purchase",
+                  "slug": "layouts-content-nav-sidebar"
+                }
+              ]
+            },
+            {
+              "name": "Policy and Terms",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Prefix",
+              "slug": "layouts-content-nav-sidebar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Zarok App",
+      "icon": "menu-icon tf-icons bx bx-devices",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "Add Category",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Add Manage Videos",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "name": "Prefix",
+              "slug": "layouts-content-nav-sidebar"
+            },
+            {
+              "name": "Policy and Terms",
+              "slug": "layouts-content-nav-sidebar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Yekbun Tv",
+      "icon": "menu-icon tf-icons bx bx-tv",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "View Users",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "name": "Maintainance",
+              "slug": "layouts-content-nav-sidebar",
+              "submenu": [
+                {
+                  "name": "Kids Area",
+                  "slug": "layouts-content-nav-sidebar",
+                  "submenu": [
+                    {
+                      "name": "Category",
+                      "slug": "layouts-content-nav-sidebar"
+                    }
+                  ]
+                },
+                {
+                  "name": "Adult Area",
+                  "slug": "layouts-content-nav-sidebar",
+                  "submenu": [
+                    {
+                      "name": "Category",
+                      "slug": "layouts-content-nav-sidebar"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Permission",
+              "slug": "layouts",
+              "submenu": [
+                {
+                  "name": "Comments",
+                  "slug": "layouts-content-nav-sidebar"
+                },
+                {
+                  "name": "Add to Playlist",
+                  "slug": "layouts-content-nav-sidebar"
+                },
+                {
+                  "name": "View Later",
+                  "slug": "layouts-content-nav-sidebar"
+                },
+                {
+                  "name": "Report",
+                  "slug": "layouts-content-nav-sidebar"
+                },
+                {
+                  "name": "Move to Playlist",
+                  "slug": "layouts-content-nav-sidebar"
+                },
+                {
+                  "name": "Create Playlist",
+                  "slug": "layouts-content-nav-sidebar"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Policy and Terms",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Payment Method",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Languages",
+          "slug": "layouts-collapsed-menu"
+        }
+      ]
+    },
+    {
+      "menuHeader": "Bank & Payments"
+    },
+    {
+      "name": "Currency",
+      "icon": "menu-icon tf-icons bx bx-devices",
+      "slug": "layouts"
+    },
+    {
+      "name": "Income",
+      "icon": "menu-icon tf-icons bx bx-money",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "url" : "app/user-income",
+          "name": "User Income",
+          "slug": "app-user-income"
+        },
+        {
+          "url" : "app/online-shop-income",
+          "name": "Online Shop Income",
+          "slug": "app-online-shop-income"
+        },
+        {
+          "url" : "app/service-income",
+          "name": "Service Income",
+          "slug": "app-service-income"
+        },
+        {
+          "url" : "app/events-income",
+          "name": "Events Income",
+          "slug": "app-events-income"
+        },
+        {
+          "url" : "app/music-income",
+          "name": "Music Income",
+          "slug": "app-music-income"
+        },
+        {
+          "url" : "app/video-income",
+          "name": "Videos Income",
+          "slug": "app-video-income"
+        },
+        {
+          "url" : "app/donation-income",
+          "name": "Donation Income",
+          "slug": "app-donation-income"
+        },
+        {
+          "url" : "app/total-income",
+          "name": "Total Income",
+          "slug": "app-total-income"
+        }
+      ]
+    },
+    {
+      "name": "Invoice",
+      "icon": "menu-icon tf-icons bx bx-file",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "User Invoice",
+          "slug": "app-invoice-list",
+          "url": "/app/invoice/list"
+        },
+        {
+          "name": "FanPage Invoice",
+          "slug": "app-invoice-list",
+          "url": "/app/invoice/list"
+        },
+        {
+          "name": "Bazar Invoice",
+          "slug": "app-invoice-list",
+          "url": "/app/invoice/list"
+        },
+        {
+          "name": "OnlineShop Invoice",
+          "slug": "app-invoice-list",
+          "url": "/app/invoice/list"
+        },
+        {
+          "name": "Ads Service Invoice",
+          "slug": "app-invoice-list",
+          "url": "/app/invoice/list"
+        },
+        {
+          "name": "Donation Invoice",
+          "slug": "app-invoice-list",
+          "url": "/app/invoice/list"
+        },
+        {
+          "name": "Setting",
+          "slug": "layouts-collapsed-menu",
+          "submenu": [
+            {
+              "name": "Edit Invoice",
+              "slug": "app-invoice-edit",
+              "url": "/app/invoice/edit"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Payments",
+      "icon": "menu-icon tf-icons bx bx-credit-card",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "Payment Office",
+          "slug": "settings.payment-offices.index",
+          "url": "/settings/payment-offices"
+        },
+        {
+          "name": "Add Manage Bank Transfer",
+          "slug": "settings.bank-transfer.index",
+          "url": "/settings/bank-transfer"
+        },
+        {
+          "name": "Add Manage Paypal Transfer",
+          "slug": "settings.paypal.stripe",
+          "url": "/settings/paypal-stripe"
+        },
+        {
+          "name": "Add Manage DebitCard",
+          "slug": "settings.payment-methods",
+          "url": "/settings/payment-methods"
+        }
+      ]
+    },
+    {
+      "menuHeader": "App Settings"
+    },
+    {
+      "name": "Portal Notifications",
+      "icon": "menu-icon tf-icons bx bx-cog",
+      "slug": "app.portal.notification",
+      "url": "/app/portal-notification"
+    },
+    {
+      "name": "Policy and Terms",
+      "icon": "menu-icon tf-icons bx bx-cog",
+      "slug": "policy_and_terms.index",
+      "url": "/policy_and_terms"
+    },
+    {
+      "name": "Locations",
+      "icon": "menu-icon tf-icons bx bx-cog",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "Add Country",
+          "slug": "settings.yekbun_location.countries.index",
+          "url": "/settings/yekbun-location/countries"
+        },
+        {
+          "name": "Add Province",
+          "slug": "settings.provinces.index",
+          "url": "/settings/provinces"
+        },
+        {
+          "name": "Add City and Zipcode",
+          "slug": "settings.cities.index",
+          "url": "/settings/cities"
+        }
+      ]
+    },
+    {
+      "name": "Add Country",
+      "icon": "menu-icon tf-icons bx bx-cog",
+      "slug": "settings.countries.index",
+      "url": "/settings/countries"
+    },
+    {
+      "name": "Add Popup",
+      "icon": "menu-icon tf-icons bx bx-cog",
+      "slug": "app.popup",
+      "url": "/app/popup"
+    },
+    {
+      "name": "App Info",
+      "icon": "menu-icon tf-icons bx bx-cog",
+      "slug": "settings.appsetting.appinfo",
+      "url": "settings/app-setting/appinfo"
+    },
+    {
+      "name": "Add Ringtone",
+      "icon": "menu-icon tf-icons bx bx-cog",
+      "slug": "settings.appsetting.ringtone",
+      "url": "settings/app-setting/ringtone"
+    },
+    {
+      "name": "Ringtone",
+      "icon": "menu-icon tf-icons bx bx-cog",
+      "slug": "layouts"
+    },
+    {
+      "name": "Maintainance",
+      "icon": "menu-icon tf-icons bx bx-cog",
+      "slug": "settings.appsetting.maintainance",
+      "url": "settings/app-setting/maintainance"
+    },
+
+    {
+      "menuHeader": "System Settings"
+    },
+    {
+      "name": "System Log",
+      "icon": "menu-icon tf-icons bx bx-file",
+      "slug": "layouts.index",
+      "url": "/logs"
+    },
+    {
+      "name": "Translation",
+      "icon": "menu-icon tf-icons bx bx-transfer",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "Add Language",
+          "slug": "language.index",
+          "url": "/language"
+        }
+      ]
+    },
+    {
+      "name": "FTP Settings",
+      "icon": "menu-icon tf-icons bx bx-network-chart",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "Settings to Move the Files",
+          "slug": "app-ftp-list",
+          "url": "/app/ftp/list"
+        }
+      ]
+    },
+    {
+      "name": "Backup Section",
+      "icon": "menu-icon tf-icons bx bx-cloud-upload",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "Add/Manage Backup Plan",
+          "slug": "layouts-collapsed-menu"
+        },
+        {
+          "name": "Backup Setting",
+          "slug": "layouts-collapsed-menu"
+        }
+      ]
+    },
+    {
+      "name": "Team & Role",
+      "icon": "menu-icon tf-icons bx bx-file",
+      "slug": "layouts",
+      "submenu": [
+        {
+          "name": "Add/Manage Team",
+          "slug": "settings.team.members.index",
+          "url": "/settings/team/members"
+        },
+        {
+          "name": "Add/Manage Roles",
+          "slug": "settings.team.roles.index",
+          "url": "/settings/team/roles"
+        },
+        {
+          "name": "Add Tasks",
+          "slug": "app-task-list",
+          "url": "/app/task/list"
+        },
+        {
+          "name": "Settings",
+          "slug": "layouts",
+          "submenu": [
+            {
+              "name": "Policy and Terms",
+              "slug": "team.policy_and_terms.index",
+              "url": "/team/policy_and_terms"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

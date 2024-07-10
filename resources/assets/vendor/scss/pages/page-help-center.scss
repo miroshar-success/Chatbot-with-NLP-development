@@ -1,0 +1,45 @@
+// * Help center
+// *******************************************************************************
+
+@use '../_bootstrap-extended/include' as light;
+@use '../_bootstrap-extended/include-dark' as dark;
+@import '../_custom-variables/pages';
+
+$help-center-min-height: 300px !default;
+
+.help-center-header {
+  background: url('../../../img/pages/header.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: $help-center-min-height !important;
+
+  .input-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: calc(100% - 45%);
+  }
+
+  @include light.media-breakpoint-down(sm) {
+    .input-wrapper {
+      max-width: calc(100% - 30%);
+    }
+  }
+}
+
+//Light style
+@if $enable-light-style {
+  .light-style {
+    .help-center-bg-alt {
+      background-color: light.rgba-to-hex(rgba(light.$black, 0.08), light.$rgba-to-hex-bg);
+    }
+  }
+}
+
+//Dark style
+@if $enable-dark-style {
+  .dark-style {
+    .help-center-bg-alt {
+      background-color: dark.rgba-to-hex(rgba(dark.$gray-500, 0.08), dark.$card-bg);
+    }
+  }
+}

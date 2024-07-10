@@ -1,0 +1,931 @@
+{
+  "menu": [
+    {
+      "url": "/analytics",
+      "name": "Dashboards",
+      "icon": "menu-icon tf-icons bx bxs-dashboard",
+      "slug": "analytics.index",
+      "permissions": "dashboard.read",
+      "badge": [
+        "primary",
+        "3"
+      ]
+    },
+    {
+      "name": "User",
+      "icon": "menu-icon tf-icons bx bxs-user",
+      "slug": "users",
+      "permissions": "users.read,users.create,users.write,users.delete",
+      "submenu": [
+        {
+          "url": "/users/standard",
+          "name": "Standard",
+          "slug": "users.standard.index",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/users/premium",
+          "name": "Premium",
+          "slug": "users.premium.index",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/users/vip",
+          "name": "VIP",
+          "slug": "users.vip.index",
+          "hasNoPermissions": true
+        },
+        {
+          "name": "Settings",
+          "slug": "users.settings",
+          "submenu": [
+            {
+              "name": "Reasons",
+              "url": "/settings/reasons",
+              "hasNoPermissions": true
+            },
+            {
+              "name": "Reports",
+              "url": "#",
+              "hasNoPermissions": true
+            },
+            {
+              "url": "/settings/prefix",
+              "name": "Prefix",
+              "slug": "settings.prefix"
+            },
+            {
+              "url": "/policy_and_terms",
+              "name": "Policy and Terms",
+              "slug": "policy_and_terms.index",
+              "permissions": "policy_terms.read,policy_terms.create,policy_terms.write,policy_terms.delete"
+            }
+          ]
+        },
+        {
+          "name": "User Roles",
+          "slug": "settings.user-roles",
+          "submenu": [
+            {
+              "url": "/settings/user-roles/standard",
+              "name": "Standard User",
+              "slug": "settings.user-roles.standard",
+              "hasNoPermissions": true
+            },
+            {
+              "url": "/settings/user-roles/premium",
+              "name": "Premium User",
+              "slug": "settings.user-roles.premium",
+              "hasNoPermissions": true
+            },
+            {
+              "url": "/settings/user-roles/vip",
+              "name": "VIP User",
+              "slug": "settings.user-roles.vip",
+              "hasNoPermissions": true
+            },
+            {
+              "url": "/settings/user-roles/fanpage",
+              "name": "FanPage",
+              "slug": "settings.user-roles.fanpage",
+              "hasNoPermissions": true
+            }
+          ]
+        },
+        {
+          "name": "Reported Users",
+          "slug": "reports",
+          "permissions": "reports.read,reports.create,reports.write,reports.delete",
+          "submenu": [
+            {
+              "url": "/reports",
+              "name": "User Report",
+              "slug": "reports.index",
+              "hasNoPermissions": true
+            },
+            {
+              "url": "/reports/flagged-users?status=pending",
+              "name": "Flagged User",
+              "slug": "reports.flagged-users.index",
+              "hasNoPermissions": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "icon": "menu-icon tf-icons bx bxs-music",
+      "slug": "music",
+      "permissions": "music.read,music.create,music.write,music.delete",
+      "submenu": [
+        {
+          "url": "/music",
+          "name": "Add Music",
+          "slug": "music.index",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/music-category",
+          "name": "Add Category",
+          "slug": "music-category.index",
+          "hasNoPermissions": true
+        },
+        {
+          "name": "Artists",
+          "slug": "artist",
+          "permissions": "artist.read,artist.create,artist.write,artist.delete",
+          "submenu": [
+            {
+              "url": "/artist",
+              "name": "Add Artist",
+              "slug": "artist.index",
+              "hasNoPermissions": true
+            },
+            {
+              "url": "/album",
+              "name": "Add Album",
+              "slug": "album.index",
+              "hasNoPermissions": true
+            },
+            {
+              "url": "/songs",
+              "name": "Add Songs",
+              "slug": "songs.index",
+              "hasNoPermissions": true
+            },
+            {
+              "url": "/video-clips",
+              "name": "Add Video Clips",
+              "slug": "video-clips.index",
+              "hasNoPermissions": true
+            }
+          ]
+        },
+        {
+          "name": "Settings",
+          "slug": "users.settings",
+          "submenu": [
+            {
+              "url": "/settings/prefix",
+              "name": "Prefix",
+              "slug": "settings.prefix"
+            },
+            {
+              "url": "/policy_and_terms",
+              "name": "Policy and Terms",
+              "slug": "policy_and_terms.index",
+              "permissions": "policy_terms.read,policy_terms.create,policy_terms.write,policy_terms.delete"
+            },
+            {
+              "url": "/settings/pricing",
+              "name": "Pricing",
+              "slug": "settings.pricing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Voting",
+      "icon": "menu-icon tf-icons fa fa-pie-chart",
+      "slug": "app-voting",
+      "permissions": "voting.read,voting.create,voting.write,voting.delete",
+      "submenu": [
+        {
+          "url": "/vote",
+          "name": "Add / Manage Vote",
+          "slug": "vote.index",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/vote-category",
+          "name": "Add Category",
+          "slug": "vote-category.index",
+          "hasNoPermissions": true
+        }
+      ]
+    },
+    {
+      "name": "Online Shop",
+      "icon": "menu-icon tf-icons bx bxs-store",
+      "slug": "online-shop",
+      "permissions": "online_shop.read,online_shop.create,online_shop.write,online_shop.delete",
+      "submenu": [
+        {
+          "url": "/dashboard",
+          "name": "dashboard",
+          "slug": "dashboard",
+          "hasNoPermissions": true,
+          "submenu": [
+            {
+              "url": "/new-reques",
+              "name": "New Request",
+              "slug": "new-reques"
+            },
+            {
+              "url": "/total-shops",
+              "name": "Total Shops",
+              "slug": "total-shops"
+            },
+            {
+              "url": "/shop-onHold",
+              "name": "Shop on Hold",
+              "slug": "shop-onHold"
+            },
+            {
+              "url": "/order-today",
+              "name": "Total Order Today",
+              "slug": "order-today"
+            },
+            {
+              "url": "/order-week",
+              "name": "Total Order This Week",
+              "slug": "order-week"
+            },
+            {
+              "url": "/order-month",
+              "name": "Total Order This Month",
+              "slug": "order-month"
+            },
+            {
+              "url": "/income-week",
+              "name": "Total Income This Week",
+              "slug": "income-week"
+            },
+            {
+              "url": "/income-month",
+              "name": "Total Income This Month",
+              "slug": "income-month"
+            },
+            {
+              "url": "/best-shop-orders",
+              "name": "List Best Shop by orders",
+              "slug": "best-shop-orders"
+            }
+          ]
+        },
+        {
+          "url": "/new-request",
+          "name": "New Request",
+          "slug": "new-request",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/manage-shops",
+          "name": "Manage Shops",
+          "slug": "manage-shops",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/pricing-plan",
+          "name": "Pricing Plan",
+          "slug": "pricing-plan",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/payment",
+          "name": "Payment",
+          "slug": "payment",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/bills",
+          "name": "Bills",
+          "slug": "bills",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/refund-request",
+          "name": "Refund Request",
+          "slug": "refund-requet",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/payout-request",
+          "name": "Payout Request",
+          "slug": "payout-requet",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/income",
+          "name": "Income",
+          "slug": "income",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/gift",
+          "name": "For Gift",
+          "slug": "gift",
+          "hasNoPermissions": true
+        }
+      ]
+    },
+    {
+      "name": "FanPage",
+      "icon": "menu-icon tf-icons bx bxs-user",
+      "slug": "fanpage",
+      "permissions": "fanpage.read,fanpage.create,fanpage.write,fanpage.delete",
+      "submenu": [
+        {
+          "url": "/fanpage/requests",
+          "name": "New Requests",
+          "slug": "fanpage.requests",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/fanpage",
+          "name": "Manage Fan Page",
+          "slug": "fanpage.index",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/fanpage/blocked",
+          "name": "Blocked Fan Page",
+          "slug": "fanpage.blocked",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/fan-page-type",
+          "name": "Fan Page Type",
+          "slug": "fan-page-type.index",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "#",
+          "name": "Setting",
+          "hasNoPermissions": true
+        }
+      ]
+    },
+    {
+      "menuHeader": "Apps & Pages"
+    },
+    {
+      "url": "posts",
+      "name": "Post",
+      "icon": "menu-icon tf-icons fa fa-bullhorn",
+      "slug": "posts.index",
+      "permissions": "posts.read,posts.create,posts.write,posts.delete"
+    },
+    {
+      "name": "News",
+      "icon": "menu-icon tf-icons bx bx-news",
+      "slug": "news",
+      "permissions": "news.read,news.create,news.write,news.delete",
+      "submenu": [
+        {
+          "url": "/news",
+          "name": "Add / Manage News",
+          "slug": "news.index",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/news-category",
+          "name": "Add Category",
+          "slug": "news-category.index",
+          "hasNoPermissions": true
+        }
+      ]
+    },
+    {
+      "url": "/video",
+      "name": "Add videos",
+      "icon": "menu-icon tf-icons bx bxs-videos",
+      "slug": "upload-video",
+      "permissions": "videos.read,videos.create,videos.write,videos.delete",
+      "submenu": [
+        {
+          "url": "/upload-video-category",
+          "name": "Add category",
+          "slug": "upload-video-category.index",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/upload-video",
+          "name": "Add video",
+          "slug": "upload-video.index",
+          "hasNoPermissions": true
+        }
+      ]
+    },
+    {
+      "name": "Add Movies",
+      "slug": "add-movies",
+      "icon": "menu-icon tf-icons bx bxs-movie",
+      "url": "/video",
+      "permissions": "movies.read,movies.create,movies.write,movies.delete",
+      "submenu": [
+        {
+          "url": "/upload-movies-category",
+          "name": "Add category",
+          "slug": "upload-movies-category.index",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/upload-movies",
+          "name": "Add movies",
+          "slug": "upload-movies.index",
+          "hasNoPermissions": true
+        }
+      ]
+    },
+    {
+      "name": "Add Series",
+      "slug": "add-series",
+      "icon": "menu-icon tf-icons bx bxs-playlist",
+      "url": "/series",
+      "permissions": "series.read,series.create,series.write,series.delete",
+      "submenu": [
+        {
+          "url": "/series/categories?target=series",
+          "name": "Add category",
+          "slug": "add-category",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/series/series",
+          "name": "Add series",
+          "slug": "series.series.index",
+          "hasNoPermissions": true
+        }
+      ]
+    },
+    {
+      "name": "Zarok App",
+      "icon": "menu-icon tf-icons fa fa-graduation-cap",
+      "slug": "'zarok-app'",
+      "permissions": "zarok_app.read,zarok_app.create,zarok_app.write,zarok_app.delete",
+      "submenu": [
+        {
+          "name": "Add Videos",
+          "slug": "zarok-app.videos",
+          "hasNoPermissions": true,
+          "submenu": [
+            {
+              "url": "/zarok-app/videos/categories?target=zarok-app-videos&hide-target=1",
+              "name": "Add Category",
+              "slug": "zarok-app.videos.categories.index",
+              "hasNoPermissions": true
+            },
+            {
+              "url": "/zarok-app/videos?app=zarok",
+              "name": "Add Videos",
+              "slug": "zarok-app.videos.index",
+              "hasNoPermissions": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Events",
+      "icon": "menu-icon tf-icons fa fa-calendar",
+      "slug": "events",
+      "permissions": "events.read,events.create,events.write,events.delete",
+      "submenu": [
+        {
+          "url": "/events/requests",
+          "name": "Event Requests",
+          "slug": "events.requests",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/events",
+          "name": "Manage Event",
+          "slug": "events.index",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/events/categories?target=event",
+          "name": "Add Category",
+          "slug": "events.categories.index",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/events/tickets",
+          "name": "Tickets",
+          "slug": "events.tickets",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/ticket-service",
+          "name" : "Services",
+          "slug" : "ticket-service.index",
+          "hasNoPermissions":true
+        }
+
+      ]
+    },
+    {
+      "name": "History",
+      "icon": "menu-icon tf-icons bx bxs-watch",
+      "slug": "history",
+      "permissions": "history.read,history.create,history.write,history.delete",
+      "submenu": [
+        {
+          "url": "/history",
+          "name": "Manage History",
+          "slug": "history.index",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/history-category",
+          "name": "Add Category",
+          "slug": "history-category.index",
+          "hasNoPermissions": true
+        }
+      ]
+    },
+    {
+      "name": "Donation",
+      "icon": "menu-icon tf-icons fa fa-heartbeat",
+      "slug": "donations",
+      "permissions": "donations.read,donations.create,donations.write,donations.delete",
+      "submenu": [
+        {
+          "url": "/donations",
+          "name": "Add / Manage Donation",
+          "slug": "donations.index",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/donations/organizations",
+          "name": "Add / Manage Organization",
+          "slug": "donations.organizations.index",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/donations/categories?target=donation",
+          "name": "Add / Manage Category",
+          "slug": "donations.organizations.categories.index",
+          "hasNoPermissions": true
+        }
+      ]
+    },
+    {
+      "name": "Media",
+      "icon": "menu-icon tf-icons fa fa-television",
+      "slug": "media",
+      "permissions": "meida.read,meida.create,meida.write,meida.delete",
+      "submenu": [
+        {
+          "url": "/media",
+          "name": "Manage Media",
+          "slug": "media.index",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/media-category",
+          "name": "Add Category",
+          "slug": "media-category.index",
+          "hasNoPermissions": true
+        }
+      ]
+    },
+
+    {
+      "name": "Bazar",
+      "icon": "menu-icon tf-icons fa fa-cart-plus",
+      "slug": "bazar",
+      "permissions": "bazar.read,bazar.create,bazar.write,bazar.delete",
+      "submenu": [
+        {
+          "url": "/bazar",
+          "name": "Manage Items",
+          "slug": "bazar.index",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/bazar-category",
+          "name": "Add Category",
+          "slug": "bazar-category.index",
+          "hasNoPermissions": true
+        }
+      ]
+    },
+    {
+      "url": "service-ads",
+      "icon": "menu-icon tf-icons fa fa-cart-plus",
+      "name": "Service Ads",
+      "slug": "service-ads",
+      "permissions": "advertisement.read,advertisement.create,advertisement.write,advertisement.delete",
+      "submenu": [
+        {
+          "url": "/ads/requests?type=service",
+          "name": "Manage Request",
+          "slug": "ads/requests?type=service",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/manage-ads?type=service",
+          "name": "Manage Ads",
+          "slug": "service-ads.ads.manage-ads",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/ads/accepted?type=service",
+          "name": "Accepted Ads",
+          "slug": "service-ads.accepted",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/ads/denied?type=service",
+          "name": "Denied Ads",
+          "slug": "service-ads..ads.denied",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/ads/onHold?type=service",
+          "name": "Ads on Hold",
+          "slug": "service-ads.ads.onHold",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "/ads/setting?type=service",
+          "name": "Settings",
+          "slug": "service-ads.ads.setting",
+          "hasNoPermissions": true
+        }
+      ]
+    },
+    {
+      "menuHeader": "Components"
+    },
+    {
+      "name": "Settings",
+      "icon": "menu-icon tf-icons fa fa-cogs",
+      "slug": "setting",
+      "hasNoPermissions": true,
+      "submenu": [
+
+        {
+          "url": "/main-page-setting",
+          "name": "Main Page Setting",
+          "slug": "main-page-setting"
+        },
+        {
+          "url": "/ftp-setting",
+          "name": "Ftp Settings",
+          "slug": "ftp-setting"
+        },
+        {
+          "url": "/how-it-work",
+          "name": "How it works",
+          "slug": "how-it-work"
+        },
+        {
+          "name": "Payments Type",
+          "submenu": [
+            {
+              "url": "/settings/payment-offices",
+              "name": "Add / Manage Payment Offices",
+              "slug": "settings.payment-offices.index",
+              "hasNoPermissions": true
+            },
+            {
+              "url": "/settings/payment-methods",
+              "name": "Payment Methods",
+              "slug": "settings.payment-methods",
+              "hasNoPermissions": true
+            },
+            {
+              "url": "/settings/bank-transfer",
+              "name": "Bank Transfer",
+              "slug": "settings.bank-transfer.index",
+              "hasNoPermissions": true
+            }
+          ]
+        },
+        {
+          "url": "/settings/development-mode",
+          "name": "Development Mode",
+          "slug": "settings.development-mode"
+        },
+        {
+          "url": "/settings/prefix",
+          "name": "Add Prefix",
+          "slug": "settings.prefix"
+        },
+        {
+          "name": "Add Team",
+          "slug": "add-team",
+          "submenu": [
+            {
+              "url": "settings/team/members",
+              "name": "Add / Manage Members",
+              "slug": "settings.team.members.index",
+              "hasNoPermissions": true
+            },
+            {
+              "url": "settings/team/roles",
+              "name": "Roles",
+              "slug": "settings.team.roles.index",
+              "hasNoPermissions": true
+            }
+          ]
+        },
+        {
+          "url": "/policy_and_terms",
+          "name": "Policy and Terms",
+          "slug": "policy_and_terms.index",
+          "permissions": "policy_terms.read,policy_terms.create,policy_terms.write,policy_terms.delete"
+        },
+        {
+          "name": "Chat Setting",
+          "slug": "chat-setting",
+          "submenu": [
+            {
+              "url": "/smiley",
+              "name": "Smileys",
+              "slug": "smiley.index",
+              "hasNoPermissions": true
+            },
+            {
+              "url": "/ringtone",
+              "name": "Add Ring Tones",
+              "slug": "ringtone.index",
+              "hasNoPermissions": true
+            },
+            {
+              "url": "/chat-settings",
+              "name": "Setting",
+              "slug": "chat-settings.index",
+              "hasNoPermissions": true
+            }
+          ]
+        },
+        {
+          "name": "Mobile App",
+          "slug": "mobile-app",
+          "submenu": [
+            {
+              "url": "/mobile-settings",
+              "name": "Settings",
+              "slug": "mobile-settings.index",
+              "hasNoPermissions": true
+            },
+            {
+              "url": "/images",
+              "name": "Images",
+              "slug": "images",
+              "hasNoPermissions": true
+            }
+          ]
+        },
+        {
+          "url": "/settings/pricing",
+          "name": "Pricing",
+          "slug": "settings.pricing"
+        },
+        {
+          "url": "/popup-setting",
+          "name": "Popup Ads Setting",
+          "slug": "popup-setting"
+        },
+        {
+          "url": "/logs",
+          "name": "System Logs",
+          "slug": "logs.index"
+        },
+        {
+          "name": "Location",
+          "slug": "location",
+          "permissions": "location.read,location.create,location.write,location.delete",
+          "submenu": [
+            {
+              "url": "/settings/countries",
+              "name": "Add / Manage Country",
+              "slug": "settings.countries.index",
+              "hasNoPermissions": true
+            },
+            {
+              "url": "/settings/provinces",
+              "name": "Add / Manage Province",
+              "slug": "settings.provinces.index",
+              "hasNoPermissions": true
+            },
+            {
+              "url": "/settings/cities",
+              "name": "Add / Manage City - Zipcode",
+              "slug": "settings.cities.index",
+              "hasNoPermissions": true
+            }
+          ]
+        } ,
+         {
+          "name": "Language",
+          "permissions": "language.read,language.create,language.write,language.delete",
+          "submenu": [
+            {
+              "url": "/language",
+              "name": "Language",
+              "slug": "language",
+              "hasNoPermissions": true
+            }
+          ]
+        },
+        {
+          "name": "Reasons",
+          "url": "#",
+          "hasNoPermissions": true
+        },
+        {
+          "name": "Reports",
+          "url": "#",
+          "hasNoPermissions": true
+        },
+        {
+          "name": "RingTones",
+          "url": "#",
+          "hasNoPermissions": true
+        }
+      ]
+    },
+    {
+      "url": "app/income",
+      "name": "Income",
+      "icon": "menu-icon tf-icons bx bxs-wallet",
+      "slug": "app-income"
+    },
+    {
+      "url": "app/user-income",
+      "name": "User Income",
+      "icon": "menu-icon tf-icons bx bxs-wallet",
+      "slug": "app-user-income",
+      "submenu" : [
+        {
+          "url" : "app/daily-income",
+          "name" : "Daily Income",
+          "slug" : "app-daily-income"
+        },
+        {
+          "url": "app/monthly-income",
+          "name": "Monthly Income",
+          "slug": "app-monthly-income"
+        },
+        {
+          "url": "app/yearly-income",
+          "name": "Yearly Income",
+          "slug": "app-yearly-income"
+        }
+      ]
+    },
+    {
+      "name": "Total Income",
+      "icon": "menu-icon tf-icons bx bxs-wallet",
+      "slug": "total-income",
+      "submenu": [
+        {
+          "url": "app/daily-income",
+          "name": "Daily Income",
+          "slug": "app-daily-income",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "app/monthly-income",
+          "name": "Monthly Income",
+          "slug": "app-monthly-income",
+          "hasNoPermissions": true
+        },
+        {
+          "url": "app/yearly-income",
+          "name": "Yearly Income",
+          "slug": "app-yearly-income",
+          "hasNoPermissions": true
+        }
+      ]
+    },
+    {
+      "name": "Invoice",
+      "icon": "menu-icon tf-icons bx bxs-food-menu",
+      "slug": "app-invoice",
+      "badge": [
+        "danger",
+        "4"
+      ],
+      "submenu": [
+        {
+          "url": "/app/invoice/list",
+          "name": "List",
+          "slug": "app-invoice-list"
+        },
+        {
+          "url": "/app/invoice/preview",
+          "name": "Preview",
+          "slug": "app-invoice-preview"
+        },
+        {
+          "url": "/app/invoice/edit",
+          "name": "Edit",
+          "slug": "app-invoice-edit"
+        },
+        {
+          "url": "/app/invoice/add",
+          "name": "Add",
+          "slug": "app-invoice-add"
+        }
+      ]
+    }
+  ]
+}
