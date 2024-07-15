@@ -1758,8 +1758,8 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
 
 
         <li class="menu-item ">
-          <a href="https://dashboard.yekbun.net/news-category" class="menu-link">
-            <div>Add Category</div>
+          <a href="{{url('avatars')}}" class="menu-link">
+            <div>Add/Manage Avatars</div>
           </a>
 
 
@@ -1768,8 +1768,8 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
 
 
         <li class="menu-item ">
-          <a href="https://dashboard.yekbun.net/news" class="menu-link">
-            <div>Add / Manage News</div>
+          <a href="{{url('manage-avatars')}}" class="menu-link">
+            <div>Manage AI Posts</div>
           </a>
 
 
@@ -1777,25 +1777,6 @@ https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css
 
 
 
-        <li class="menu-item ">
-          <a href="javascript:void(0)" class="menu-link menu-toggle">
-            <div>Settings</div>
-          </a>
-
-
-          <ul class="menu-sub">
-
-
-
-            <li class="menu-item ">
-              <a href="javascript:void(0)" class="menu-link">
-                <div>Prefix</div>
-              </a>
-
-
-            </li>
-          </ul>
-        </li>
       </ul>
     </li>
 
