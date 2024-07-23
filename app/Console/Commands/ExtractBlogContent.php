@@ -47,9 +47,9 @@ class ExtractBlogContent extends Command
 
         $avatars = Avatars::all();
         foreach ($avatars as $avatar) {
-            if ($avatar->_id == "669149771e711398a70d8f02") {
                 $this->runTask($avatar);
-            }
+            continue;
+
             // Check if today is a working day
             if (
                 $avatar->working_days == 'Every Day' ||
@@ -137,7 +137,7 @@ class ExtractBlogContent extends Command
             ['role' => 'system', 'content' => 'You are an expert web analyst specializing in news content identification.'],
             [
                 'role' => 'user',
-                'content' => "Analyze the following URL: https://www.aljazeera.com
+                'content' => "Analyze the following URL: $url
         
         If the URL is a direct link to a specific news article:
            - Confirm it's a news article URL.

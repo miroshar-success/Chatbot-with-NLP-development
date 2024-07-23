@@ -611,29 +611,30 @@
 @include('avatars/footer')
 
 <script>
-    var url = "{{ url('/get-avatars/') }}";
+    var url = "{{ url('/manage-avatars/') }}";
     var imgurl = "{{ asset('') }}";
 
 
     $(document).on("click", ".show_details", function() {
         var cid = $(this).attr("cid");
-        var apiurl = url + "/" + cid;
-        $.ajax({
-            url: apiurl,
-            cache: false,
-            success: function(r) {
-                var result = JSON.parse(r);
-                $(".av_name").text(result.name);
-                $(".av_task").text(result.task);
-                $(".av_join").text(result.joindate);
-                if (result.image != "") {
-                    var imgpath = imgurl + "/images/" + result.image;
-                } else {
-                    var imgpath = "https://www.w3schools.com/howto/img_avatar.png";
-                }
-                $(".av_image").attr("src", imgpath);
-                $(".av_time").text(result.days);
-            }
-        });
+        window.location.href = url + "/" + cid;
+        // var apiurl = url + "/" + cid;
+        // $.ajax({
+        //     url: apiurl,
+        //     cache: false,
+        //     success: function(r) {
+        //         var result = JSON.parse(r);
+        //         $(".av_name").text(result.name);
+        //         $(".av_task").text(result.task);
+        //         $(".av_join").text(result.joindate);
+        //         if (result.image != "") {
+        //             var imgpath = imgurl + "/images/" + result.image;
+        //         } else {
+        //             var imgpath = "https://www.w3schools.com/howto/img_avatar.png";
+        //         }
+        //         $(".av_image").attr("src", imgpath);
+        //         $(".av_time").text(result.days);
+        //     }
+        // });
     });
 </script>
