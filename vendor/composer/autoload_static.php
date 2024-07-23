@@ -94,6 +94,7 @@ class ComposerStaticInit9c491b8531eec05ba41a11d9276a5749
             'Spatie\\FlareClient\\' => 19,
             'Spatie\\ErrorSolutions\\' => 22,
             'Spatie\\Backtrace\\' => 17,
+            'SoftCreatR\\PerplexityAI\\' => 24,
         ),
         'R' => 
         array (
@@ -348,6 +349,10 @@ class ComposerStaticInit9c491b8531eec05ba41a11d9276a5749
         array (
             0 => __DIR__ . '/..' . '/spatie/backtrace/src',
         ),
+        'SoftCreatR\\PerplexityAI\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/softcreatr/php-perplexity-ai-sdk/src',
+        ),
         'Ramsey\\Uuid\\' => 
         array (
             0 => __DIR__ . '/..' . '/ramsey/uuid/src',
@@ -553,9 +558,13 @@ class ComposerStaticInit9c491b8531eec05ba41a11d9276a5749
     );
 
     public static $classMap = array (
+        'App\\Console\\Commands\\ExtractBlogContent' => __DIR__ . '/../..' . '/app/Console/Commands/ExtractBlogContent.php',
+        'App\\Console\\Commands\\ScrapContent' => __DIR__ . '/../..' . '/app/Console/Commands/ScrapContent.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\AvatarsController' => __DIR__ . '/../..' . '/app/Http/Controllers/AvatarsController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\MovieController' => __DIR__ . '/../..' . '/app/Http/Controllers/MovieController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -566,12 +575,16 @@ class ComposerStaticInit9c491b8531eec05ba41a11d9276a5749
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\ValidateSignature' => __DIR__ . '/../..' . '/app/Http/Middleware/ValidateSignature.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\Avatars' => __DIR__ . '/../..' . '/app/Models/Avatars.php',
+        'App\\Models\\Avatars_sources' => __DIR__ . '/../..' . '/app/Models/Avatars_sources.php',
+        'App\\Models\\Movie' => __DIR__ . '/../..' . '/app/Models/Movie.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\Services\\PerplexityService' => __DIR__ . '/../..' . '/app/Services/PerplexityService.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Brick\\Math\\BigDecimal' => __DIR__ . '/..' . '/brick/math/src/BigDecimal.php',
         'Brick\\Math\\BigInteger' => __DIR__ . '/..' . '/brick/math/src/BigInteger.php',
@@ -5504,6 +5517,9 @@ class ComposerStaticInit9c491b8531eec05ba41a11d9276a5749
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/type/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/type/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'SoftCreatR\\PerplexityAI\\Exception\\PerplexityAIException' => __DIR__ . '/..' . '/softcreatr/php-perplexity-ai-sdk/src/Exception/PerplexityAIException.php',
+        'SoftCreatR\\PerplexityAI\\PerplexityAI' => __DIR__ . '/..' . '/softcreatr/php-perplexity-ai-sdk/src/PerplexityAI.php',
+        'SoftCreatR\\PerplexityAI\\PerplexityAIURLBuilder' => __DIR__ . '/..' . '/softcreatr/php-perplexity-ai-sdk/src/PerplexityAIURLBuilder.php',
         'Spatie\\Backtrace\\Arguments\\ArgumentReducers' => __DIR__ . '/..' . '/spatie/backtrace/src/Arguments/ArgumentReducers.php',
         'Spatie\\Backtrace\\Arguments\\ProvidedArgument' => __DIR__ . '/..' . '/spatie/backtrace/src/Arguments/ProvidedArgument.php',
         'Spatie\\Backtrace\\Arguments\\ReduceArgumentPayloadAction' => __DIR__ . '/..' . '/spatie/backtrace/src/Arguments/ReduceArgumentPayloadAction.php',

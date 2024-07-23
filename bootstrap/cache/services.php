@@ -37,7 +37,8 @@
     33 => 'App\\Providers\\AuthServiceProvider',
     34 => 'App\\Providers\\EventServiceProvider',
     35 => 'App\\Providers\\RouteServiceProvider',
-    36 => 'MongoDB\\Laravel\\MongoDBServiceProvider',
+    36 => 'App\\Providers\\PerplexityServiceProvider',
+    37 => 'MongoDB\\Laravel\\MongoDBServiceProvider',
   ),
   'eager' => 
   array (
@@ -61,7 +62,8 @@
     17 => 'App\\Providers\\AuthServiceProvider',
     18 => 'App\\Providers\\EventServiceProvider',
     19 => 'App\\Providers\\RouteServiceProvider',
-    20 => 'MongoDB\\Laravel\\MongoDBServiceProvider',
+    20 => 'App\\Providers\\PerplexityServiceProvider',
+    21 => 'MongoDB\\Laravel\\MongoDBServiceProvider',
   ),
   'deferred' => 
   array (
