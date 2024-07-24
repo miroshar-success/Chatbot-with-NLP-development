@@ -47,9 +47,10 @@ class ExtractBlogContent extends Command
 
         $avatars = Avatars::all();
         foreach ($avatars as $avatar) {
-            if ($avatar->_id == "669149771e711398a70d8f02") {
-                $this->runTask($avatar);
-            }
+            // if ($avatar->_id == "669149771e711398a70d8f02") {
+            //     $this->runTask($avatar);
+            // }
+            $this->runTask($avatar); continue;
             // Check if today is a working day
             if (
                 $avatar->working_days == 'Every Day' ||
@@ -137,16 +138,16 @@ class ExtractBlogContent extends Command
             ['role' => 'system', 'content' => 'You are an expert web analyst specializing in news content identification.'],
             [
                 'role' => 'user',
-                'content' => "Analyze the following URL: https://www.aljazeera.com
-        
+                'content' => "Analyze the following URL: $url
+
         If the URL is a direct link to a specific news article:
            - Confirm it's a news article URL.
            - Return only this URL without any additional text.
-        
+
         If the URL is a news site's homepage or main page:
            - Identify the latest, prominent, or featured news article on the site.
            - Return only the full URL of that specific news article without any additional text.
-        
+
         Important:
         - Return only the URL, nothing else.
         - Do not include any explanations, comments, or additional text in your response.
