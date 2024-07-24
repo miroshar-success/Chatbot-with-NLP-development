@@ -180,8 +180,7 @@ class CreateNewsCommand extends Command
             $messageContent = $result['choices'][0]['message']['content'] ?? '';
             Log::info("scrapeNewsUrl response:" . $messageContent);
 
-            return "";
-            // return $messageContent;
+            return $messageContent;
         }
 
         return "";
@@ -235,6 +234,7 @@ class CreateNewsCommand extends Command
             $result = json_decode($response->getBody()->getContents(), true);
             $messageContent = $result['choices'][0]['message']['content'] ?? '';
             Log::info("scrapeText result: " . $messageContent);
+            return "";
             $extractedData = $this->extractTitleAndDescription($messageContent);
 
             // Extract title and description
