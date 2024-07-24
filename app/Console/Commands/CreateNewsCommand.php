@@ -13,14 +13,14 @@ use App\Models\Avatars_sources;
 use App\Models\Feeds;
 use Goutte\Client;
 
-class ExtractBlogContent extends Command
+class CreateNewsCommand extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'app:extract-blog-content';
+    protected $signature = 'app:create-news-command';
 
     /**
      * The console command description.
@@ -47,7 +47,7 @@ class ExtractBlogContent extends Command
 
         $avatars = Avatars::all();
         foreach ($avatars as $avatar) {
-                $this->runTask($avatar);
+            $this->runTask($avatar);
             continue;
 
             // Check if today is a working day
@@ -105,7 +105,7 @@ class ExtractBlogContent extends Command
         }
 
         // Your task logic here, e.g., fetch blog content from $sourceLink
-        Log::info('Task executed at ' . now() . ' with source link: ' . $sourceLink);
+        Log::info('Task executed with source link: ' . $sourceLink);
         // Perform the required operations using $sourceLink
         $this->processSourceLink($avatar, $sourceLink);
     }
@@ -113,7 +113,7 @@ class ExtractBlogContent extends Command
     private function processSourceLink($avatar, $sourceLink)
     {
         $newsUrl = $this->scrapeNewsUrl($sourceLink);
-        if (empty($newsUrl))
+        if (!filter_var($newsUrl, FILTER_VALIDATE_URL))
             return;
 
         $feed_id = $this->scrapeText($avatar->_id, $newsUrl, $avatar->text_setting_content_type, $avatar->text_setting_content_type2, $avatar->lang_setting_content_type);
@@ -133,27 +133,41 @@ class ExtractBlogContent extends Command
     public function scrapeNewsUrl(string $url)
     {
         // Prepare the message for Perplexity
+        // $messages = [
+        //     ['role' => 'system', 'content' => 'You are an expert web analyst specializing in news content identification.'],
+        //     [
+        //         'role' => 'user',
+        //         'content' => "Analyze the following URL: $url
+
+        // If the URL is a direct link to a specific news article:
+        //    - Confirm it's a news article URL.
+        //    - Return only this URL without any additional text.
+
+        // If the URL is a news site's homepage or main page:
+        //    - Identify the latest news article on the site.
+        //    - Return only the full URL of that specific news article without any additional text.
+
+        // Important:
+        // - Return only the URL, nothing else.
+        // - Do not include any explanations, comments, or additional text in your response.
+        // - Ensure the returned URL is complete and properly formatted."
+        //     ]
+        // ];
+
         $messages = [
-            ['role' => 'system', 'content' => 'You are an expert web analyst specializing in news content identification.'],
             [
-                'role' => 'user',
-                'content' => "Analyze the following URL: $url
-        
-        If the URL is a direct link to a specific news article:
-           - Confirm it's a news article URL.
-           - Return only this URL without any additional text.
-        
-        If the URL is a news site's homepage or main page:
-           - Identify the latest, prominent, or featured news article on the site.
-           - Return only the full URL of that specific news article without any additional text.
-        
-        Important:
-        - Return only the URL, nothing else.
-        - Do not include any explanations, comments, or additional text in your response.
-        - Ensure the returned URL is complete and properly formatted."
+                "role" => "system",
+                "content" => "You are an AI assistant tasked with extracting a single news article URL from a given news website. Please provide the most relevant recent article URL found on the site."
+            ],
+            [
+                "role" => "user",
+                "content" => "Please extract and provide the URL of the most recent news article from $url.
+                    Important:
+                    - Return only the URL, nothing else.
+                    - Do not include any explanations, comments, or additional text in your response.
+                    - Ensure the returned URL is complete and properly formatted."
             ]
         ];
-
 
         // Make the API call to Perplexity
         $response = $this->perplexity->createChatCompletion([
@@ -164,9 +178,10 @@ class ExtractBlogContent extends Command
         if ($response->getStatusCode() === 200) {
             $result = json_decode($response->getBody()->getContents(), true);
             $messageContent = $result['choices'][0]['message']['content'] ?? '';
-            Log::info("response:" . $messageContent);
-            if ($messageContent != "")
-                return $messageContent;
+            Log::info("scrapeNewsUrl response:" . $messageContent);
+
+            return "";
+            // return $messageContent;
         }
 
         return "";
@@ -202,8 +217,6 @@ class ExtractBlogContent extends Command
    Title: [title]
    Description: [description]";
 
-        Log::info("command:" . $command);
-
         $messages = [
             ['role' => 'system', 'content' => 'You are a helpful assistant that scraps and formats webpage content.'],
             [
@@ -220,11 +233,11 @@ class ExtractBlogContent extends Command
 
         if ($response->getStatusCode() === 200) {
             $result = json_decode($response->getBody()->getContents(), true);
-            $formattedContent = $result['choices'][0]['message']['content'] ?? '';
-            $extractedData = $this->extractTitleAndDescription($formattedContent);
+            $messageContent = $result['choices'][0]['message']['content'] ?? '';
+            Log::info("scrapeText result: " . $messageContent);
+            $extractedData = $this->extractTitleAndDescription($messageContent);
 
             // Extract title and description
-            Log::info("extract title and description result: " . $formattedContent);
             if ($lang != null && $lang != "") {
                 $extractedData['title'] = $this->translate($lang, $extractedData['title']);
                 $extractedData['description'] = $this->translate($lang, $extractedData['description']);
@@ -262,8 +275,8 @@ class ExtractBlogContent extends Command
 
         if ($response->getStatusCode() === 200) {
             $result = json_decode($response->getBody()->getContents(), true);
-            $translatedText = $result['choices'][0]['message']['content'] ?? '';
-            return trim($translatedText);
+            $messageContent = $result['choices'][0]['message']['content'] ?? '';
+            return trim($messageContent);
         }
 
         return "";
@@ -303,8 +316,9 @@ class ExtractBlogContent extends Command
 
         if ($response->getStatusCode() === 200) {
             $result = json_decode($response->getBody()->getContents(), true);
-            Log::info("scrapeImage API result:" . $result['choices'][0]['message']['content']);
-            $imageUrl = $this->extractImageUrlFromResponse($result);
+            $messageContent = $result['choices'][0]['message']['content'] ?? '';
+            Log::info("scrapeImage result:" . $messageContent);
+            $imageUrl = $this->extractImageUrlFromResponse($messageContent);
             Log::info("imageUrl:" . $imageUrl);
 
             if ($imageUrl) {
