@@ -47,16 +47,9 @@ class CreateNewsCommand extends Command
 
         $avatars = Avatars::all();
         foreach ($avatars as $avatar) {
-<<<<<<< HEAD:app/Console/Commands/ExtractBlogContent.php
-            // if ($avatar->_id == "669149771e711398a70d8f02") {
-            //     $this->runTask($avatar);
-            // }
-            $this->runTask($avatar); continue;
-=======
             $this->runTask($avatar);
             continue;
 
->>>>>>> b469af319eab4a6a70aeaee51d6f4e6cd50aa992:app/Console/Commands/CreateNewsCommand.php
             // Check if today is a working day
             if (
                 $avatar->working_days == 'Every Day' ||
